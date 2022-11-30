@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: service
+metadata:
+  name: app-html-lb
+spec:
+  selector:
+    app: app-html
+  ports:
+    - port: 80
+      targetPOrt: 80
+  type: LoadBalancer

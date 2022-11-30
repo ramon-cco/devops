@@ -5,7 +5,7 @@ metadata:
   labels:
     app: app-html
 spec:
-  replicas: 3
+  replicas: 5
   selector:
     matchLabels:
       app: app-html
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: app-html
-        image: denilsonbonatti/app-html:1.0
+        image: ramoncco/app-html:1.2
         ports:
         - containerPort: 80
